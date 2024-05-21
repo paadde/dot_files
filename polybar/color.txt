@@ -1,0 +1,24 @@
+[colors]
+; retro vintage classic
+background = #ffff
+foreground =
+alert =
+volume-min =
+volume-med =
+volume-max =
+lightgeen = #A4D19D
+green = #6AA891
+darkblue = #3C3759
+brown = #855C5C
+red = #C4655D
+gold = #EDC187
+silver = #C9C7AF
+dirtywhite = #E3E1C9
+beige = #EEF1DB
+gray = #485B63
+black = #000000
+white = #C0C0C0
+red = #FF0000
+fuchsia = #FF00FF
+blue = #0000FF
+yellow = #FFFF00
