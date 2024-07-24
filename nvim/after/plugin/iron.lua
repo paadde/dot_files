@@ -1,5 +1,4 @@
 local iron = require("iron.core")
-local view = require("iron.view")
 
 iron.setup {
   config = {
@@ -15,13 +14,7 @@ iron.setup {
     },
     -- How the repl window will be displayed
     -- See below for more information
-    repl_open_cmd = view.split.vertical.botright("50%", {
-        winfixwidth = false,
-        winfixheight = false,
-        -- any window-local configuration can be used here
-        number = true
-    })
-
+    repl_open_cmd = require('iron.view').right(90)
   },
   -- Iron doesn't set keymaps by default anymore.
   -- You can set them here or manually add keymaps to the functions in iron.core
@@ -30,6 +23,7 @@ iron.setup {
     visual_send = "<space>sc",
     send_file = "<space>sf",
     send_line = "<space>sl",
+    send_paragraph = "<space>sp",
     send_until_cursor = "<space>su",
     send_mark = "<space>sm",
     mark_motion = "<space>mc",
@@ -52,8 +46,7 @@ iron.setup {
 vim.keymap.set('n', '<space>rs', '<cmd>IronRepl<cr>')
 vim.keymap.set('n', '<space>rr', '<cmd>IronRestart<cr>')
 vim.keymap.set('n', '<space>rf', '<cmd>IronFocus<cr>')
-vim.keymap.set('n', '<space>rq', '<cmd>IronHide<cr>')
-
+vim.keymap.set('n', '<space>rh', '<cmd>IronHide<cr>')
 
 
 
@@ -115,7 +108,6 @@ repl_open_cmd = view.split("40%", {
   -- any window-local configuration can be used here
   number = true
 })
-
 
 
   --  repl_open_cmd = require('iron.view').bottom(40),

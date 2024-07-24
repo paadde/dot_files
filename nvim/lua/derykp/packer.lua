@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
   use('lewis6991/gitsigns.nvim') -- OPTIONAL: for git status
   use('nvim-tree/nvim-web-devicons') -- OPTIONAL: for file icons
   use('jalvesaq/Nvim-R') -- enable interactive terminal for R language
-  use('Vigemus/iron.nvim') -- enable interactive terminal for python
+  use('Vigemus/iron.nvim') -- enable python repl
   use('tpope/vim-dadbod') -- enable connection with various databases
   use('kristijanhusak/vim-dadbod-ui') -- enable Dadbod DB UI
   use('kristijanhusak/vim-dadbod-completion') -- enable dadbod completion
